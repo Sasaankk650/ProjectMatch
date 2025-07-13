@@ -1,0 +1,182 @@
+/* Base Container */
+.upload-container {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* ✅ Top navigation bar (matching the reference image) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d7c35;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar .profile-icon {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  color: #2d7c35;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Upload Box */
+.upload-box {
+  margin: 30px auto;
+  max-width: 450px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Dropzone */
+.drop-zone {
+  border: 2px dashed #ccc;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+}
+
+.cloud-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2d7c35;
+}
+
+.browse-text {
+  color: #2d7c35;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Upload Button */
+.upload-button {
+  padding: 10px;
+  width: 100%;
+  background-color: #2d7c35;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Progress Section */
+.uploading-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.progress-file {
+  margin-bottom: 10px;
+}
+
+.progress-file input {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2d7c35;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Uploaded Files */
+.uploaded-list {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.uploaded-list p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.uploaded-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.uploaded-item input {
+  flex: 1;
+  padding: 6px;
+  margin-right: 10px;
+  border: 1px solid #2d7c35;
+  border-radius: 5px;
+}
+
+.uploaded-item button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+}
+
+/* ✅ Green Navbar like reference */
+.navbar {
+  background-color: #2d7c35;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 18px;
+  flex: 1;
+  text-align: center;
+}
+
+.navbar .profile-icon {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4b4b4b;
+  font-size: 18px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  margin-left: 14px;
+}
+

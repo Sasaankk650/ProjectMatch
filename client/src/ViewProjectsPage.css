@@ -1,0 +1,107 @@
+.projects-wrapper {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.projects-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #2d7c35;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #2d7c35;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  color: green;
+  margin-bottom: 8px;
+}
+
+.submit-btn {
+  padding: 10px;
+  width: 100%;
+  background-color: #2d7c35;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: none;
+  color: red;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.search-bar {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  font-size: 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 20px;
+  color: #2d7c35;
+  margin-bottom: 10px;
+}
+

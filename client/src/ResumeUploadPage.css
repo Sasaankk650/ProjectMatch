@@ -1,0 +1,72 @@
+.upload-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #2d7c35;
+  color: white;
+  padding: 15px 20px;
+  height: 60px;
+}
+
+.nav-left {
+  font-size: 24px;
+  cursor: pointer;
+  flex: 0 0 40px;
+}
+
+.nav-title {
+  flex: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-right {
+  flex: 0 0 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2d7c35;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Keep dropdown styling as-is */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: white;
+  color: #2d7c35;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu div {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu div:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu div:hover {
+  background-color: #f1f1f1;
+}

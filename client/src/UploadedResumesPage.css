@@ -1,0 +1,117 @@
+.resumes-container {
+  padding: 80px 40px 40px; /* ⬅️ added top padding to push content below navbar */
+  font-family: Arial, sans-serif;
+}
+
+.resumes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.resume-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.resume-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.serial-number {
+  background-color: #2d7c35;
+  color: white;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.filename {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-upload-button-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.upload-project-button {
+  padding: 10px 20px;
+  background-color: #2d7c35;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d7c35;
+  color: white;
+  padding: 15px 20px;
+  height: 60px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.brand {
+  flex: 1;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2d7c35;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
