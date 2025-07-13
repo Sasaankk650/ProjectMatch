@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Project Match - Resume Shortlisting Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Project Match** is a secure AI-powered web application that streamlines the resume shortlisting process. It enables HR teams to upload resumes, define project requirements, and automatically match the most relevant candidates using skill-based AI matching.
 
-## Available Scripts
+## Workflow
 
-In the project directory, you can run:
+1. **Signup/Login**  
+   Users register/login with a role (`HR` or `Manager HR`).
 
-### `npm start`
+2. **Resume Upload**  
+   HR uploads multiple resumes (PDFs).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Project Upload**  
+   HR enters one or more project requirements with:
+   - Title
+   - Description
+   - Required Skills
+   - Experience & Duration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **View Projects**  
+   Lists all submitted projects. Each project has a button to view shortlisted resumes.
 
-### `npm test`
+5. **Shortlist Resumes (AI Matching)**  
+   Resumes are parsed using `pdf-parse` and matched to projects using:
+   - Rule-based skill matching
+   - Sorted by score (match percentage)
+   - Zero-score resumes are excluded
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## AI & Resume Scoring Logic
 
-### `npm run build`
+- **Resume Text Extraction**:  
+  Uses `pdf-parse` to read resume content.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Skill Matching (Rule-Based AI)**:
+  - Project-required skills vs. resume words
+  - Fuzzy or exact matching
+  - Score = `(matched skills / total required skills) * 100`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Security Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### AES Encryption (via `crypto-js`)
+- **Encrypted Responses** from backend to frontend for:
+  - Signup/Login
+  - Resume Upload
+  - Project Upload
+  - View Projects
+  - Shortlist Table
+- **Encrypted Payloads** for POST requests
 
-### `npm run eject`
+## Packages Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
+- `react`
+- `react-router-dom`
+- `crypto-js`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend
+- `express`
+- `mongoose`
+- `bcryptjs`
+- `pdf-parse`
+- `multer`
+- `crypto-js`
+- `dotenv`
+- `cors`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tools
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **VS Code**
+- **Node.js & npm**
+- **MongoDB Atlas**
+- **Postman (for API testing)**
 
-## Learn More
+## How to Run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Backend Setup 
+ ```bash
+cd backend
+npm install
+npm run dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Frontend Setup
+cd client
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Folder Structure
+projectmatch/
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   └── server.js
+├── client/
+│   ├── src/
+│   ├── public/
+│   └── package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
+Developed by: Kottakota Sasaank
+For internal training & project match automation at HR departments.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
